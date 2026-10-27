@@ -1,0 +1,15 @@
+@page
+@model LoginModel
+
+<h1>Log in</h1>
+
+<form method="post">
+	<label asp-for="Username"></label>
+	<input asp-for="Username" />
+
+	<label asp-for="Password"></label>
+	<input asp-for="Password" type="password" />
+
+	<button type="submit">Sign in</button>
+	<div asp-validation-summary="All"></div>
+</form>
